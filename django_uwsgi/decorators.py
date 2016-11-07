@@ -35,7 +35,7 @@ def _encode1(val):
 
 def _decode1(val):
     if sys.version_info >= (3, 0) and isinstance(val, bytes):
-        return val.decode('utf-8')
+        return val.decode('utf-8', 'ignore')
     else:
         return val
 
